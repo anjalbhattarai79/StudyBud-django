@@ -12,6 +12,11 @@ from .forms import RoomForm
 #     {'id':3, 'name':"Frontend developers!"},
 # ]
 
+def loginPage(request):
+    
+    context = {}
+    render(request, 'base/login_registration.html', context= context )
+
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
     rooms = Room.objects.filter(
