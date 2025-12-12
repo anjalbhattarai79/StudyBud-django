@@ -20,5 +20,6 @@ urlpatterns = [
     path('update-user/', views.updateUser, name='update-user'),
     
     path('topics/', views.topicPage, name='topics'),
+    path('activity/', views.activityPage, name='activity'),
     
 ]
